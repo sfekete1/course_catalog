@@ -19,6 +19,10 @@ group :development do
   gem 'listen',                '3.1.5'
   gem 'spring',                '2.0.2'
   gem 'spring-watcher-listen', '2.0.1'
+  gem 'json'
+  gem 'activerecord-import'
+  gem "better_errors"
+  gem "pry-rails"
 end
 
 group :test do
