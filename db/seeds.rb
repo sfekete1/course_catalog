@@ -15,3 +15,6 @@
 #JSON.parse(File.read("/public/subject.json")).each do |subject|
 #	Subject.create(subject.to_h)
 #end
+
+require 'faker'
+require 'populator'
