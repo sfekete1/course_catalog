@@ -5,3 +5,14 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+JSON.parse(File.read("/public/course.json")).each do |course|
+	Course.create(course.to_h)
+end
+
+JSON.parse(File.read("/public/instructor.json")).each do |instructor|
+	Instructor.create(instructor.to_h)
+end
+
+JSON.parse(File.read("/public/subject.json")).each do |subject|
+	Subject.create(subject.to_h)
+end
